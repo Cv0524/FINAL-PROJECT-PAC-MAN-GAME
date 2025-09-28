@@ -23,7 +23,6 @@ color_list = [(172, 71, 36),
               (121, 38, 50), (55, 71, 54)]
               
 turtle.speed("fastest")
-
 turtle.setheading(225)
 turtle.penup()
 turtle.forward(250)
@@ -40,13 +39,6 @@ for dot_count in range(1, number_of_dots + 1):
         turtle.setheading(180)
         turtle.forward(500)
         turtle.setheading(0)
-
-
-
-
-
-
-
 
 screen = Screen()
 screen.exitonclick()
