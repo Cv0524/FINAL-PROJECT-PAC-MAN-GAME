@@ -19,6 +19,7 @@ class Snake:
         #create a 3 turtl
         for turttle_index in range(0,3):
             new_turtle = Turtle(shape="square")
+            new_turtle.shapesize(0.7)
             new_turtle.color("white")
             new_turtle.penup()
             new_turtle.goto(x=x_position[turttle_index], y = y_position[turttle_index])
