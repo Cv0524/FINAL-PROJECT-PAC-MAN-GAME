@@ -3,7 +3,7 @@ from turtle import Turtle
 
 x_position = [0, -20, -40]
 y_position = [0, -0, -0]
-
+starting = 3
 MOVE_DISTANCE = 20
 DOWN = 90
 UP = 270
@@ -17,13 +17,14 @@ class Snake:
 
     def create_snake(self):
         #create a 3 turtl
-        for turttle_index in range(0,3):
+        for turttle_index in range(0,starting):
             new_turtle = Turtle(shape="square")
             new_turtle.shapesize(0.7)
             new_turtle.color("white")
             new_turtle.penup()
             new_turtle.goto(x=x_position[turttle_index], y = y_position[turttle_index])
             self.segments.append(new_turtle)
+    def extend(sef)
 
     def moved(self):
         for turtle_segments in range(len(self.segments) -1, 0, -1):
