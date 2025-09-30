@@ -72,17 +72,7 @@ while running:
                 VEL_Y = 0
 
             break  # only handle one collision per frame
-            
-            
-
-
-    
-
-
-            
-
-
-   
+        
     agent_one.draw_circle(agent_one_cord.x,agent_one_cord.y)
     pygame.display.update()
 
