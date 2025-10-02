@@ -1,5 +1,4 @@
 from tkinter import *
-import random
 
 GRID_SIZE = 21        # 21x21 grid (odd better for centered start)
 CELL_SIZE = 25        # pixels
@@ -14,13 +13,11 @@ class Create_Grid:
                              bg="white")
         self.canvas.pack()
 
-        # Maze matrix: wall only when BOTH row and col are odd -> corridors remain
+        # Maze matrix: wall when BOTH row and col are odd
         self.maze = self.generate_maze()
 
         # Draw maze
         self.draw_maze()
-
-
 
     def generate_maze(self):
         """
@@ -32,9 +29,9 @@ class Create_Grid:
             row = []
             for c in range(GRID_SIZE):
                 if (r % 2 == 1) and (c % 2 == 1):
-                    row.append(1)  # wall (black block)
+                    row.append(1)  # wall
                 else:
-                    row.append(0)  # path (walkable)
+                    row.append(0)  # path
             maze.append(row)
         return maze
 
@@ -47,5 +44,3 @@ class Create_Grid:
                     self.canvas.create_rectangle(x0, y0, x1, y1, fill="black", outline="")
                 else:
                     self.canvas.create_rectangle(x0, y0, x1, y1, fill="white", outline="")
-
-
