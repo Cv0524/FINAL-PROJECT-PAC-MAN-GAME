@@ -2,7 +2,7 @@ import random
 
 GRID_SIZE = 21
 CELL_SIZE = 25
-AGENT_SIZE = 15
+AGENT_SIZE = 20
 
 class Agent:
     def __init__(self, root, canvas, maze, color="red"):

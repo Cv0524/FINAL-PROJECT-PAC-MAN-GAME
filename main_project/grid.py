@@ -3,7 +3,7 @@ from tkinter import *
 GRID_SIZE = 21        # 21x21 grid (odd better for centered start)
 CELL_SIZE = 25        # pixels
 AGENT_SIZE = 15       # diameter in pixels
-
+center = GRID_SIZE // 2 # Get the center index
 class Create_Grid:
     def __init__(self, root):
         self.root = root
@@ -29,6 +29,7 @@ class Create_Grid:
             row = []
             for c in range(GRID_SIZE):
                 if (r % 2 == 1) and (c % 2 == 1):
+
                     row.append(1)  # wall
                 else:
                     row.append(0)  # path
